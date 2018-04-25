@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML сторінка</title>
+</head>
+<body>
+    <header>
+        <h1>HTML сторінка</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Що ми вміємо робити в HTML</h2>
+            
+            
+            <dl>
+                <dt>HTML (вчимо зараз)</dt>
+                
+                <dd>Він потрібен для позначення структурного складу тексту 
+                (заголовки, абзаци, списки, таблиці, цитати та таке інше), дозволяє використовувати гіперпосилання,
+                за допомогою HTML ми можемо додавати до нашої веб-сторінки зображення, аудіофайли, відео і багато інших крутих штук
+                </dd>
+                
+                <dt>CSS (скоро будемо вчити)</dt>
+                <dd>Тут можна зробити сторінку, красивою, яскравою та більш естетичною</dd>
+            </dl>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>Невпорядкований список</h2>
+            <ul type="square">
+                <li>Перший елемент списку</li>
+                <li>Другий <b>елемент</b></li>
+                <li>Передостанній елемент <i>невпорядкованого</i> списку</li>
+                <li>Останній</li>
+            </ul>
+            
+            <br>
+            
+            <h2>А ще в HTML можна писати <b>формули</b></h2>
+            <ol type="I" start="5">
+                <li>sin<sup>2</sup>x+cos<sup>2</sup>x=1</li>
+                <li>log<sub>a</sub>1=0</li>
+                <li>C<sub>10</sub>H<sub>12</sub>N<sub>2</sub>O</li>
+                <li>ctg(45<sup>&#176;</sup>)=1</li>
+                <li>Ну і всяке таке інше ;)</li>
+            </ol>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>Хіба не всі люблять котиків?
+                <sub><img src="yellowface.png" alt=":D" width="25"></sub>
+            </h2>
+            
+            <img src="cat1.jpg" alt="Кіт Тімон" width="250">
+                
+            <br>
+                
+            <img src="cat2.png" alt="І знову кіт Тімон (так задумано, щоб не відкривалась картинка)" width="250">
+                
+            <br>
+            
+            <p>а ця картинка є посиланням</p>
+            
+            <a target="_blank" href="https://www.instagram.com/timonskii/">
+                <img src="cat3.jpg" alt="Кіт Тімон" width="250">
+            </a>
+        </section>
+            
+        <hr>
+        
+        <section>
+            <h2>Нехай тут буде таблиця</h2>
+            <table border="9">
+                <caption>Префікси фізичних величин</caption>
+                <thead>
+                         <tr>
+                        <th>Префікс</th>
+                        <th>Позначення</th>
+                        <th>Множник</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+
+                    <tr>
+                        <td colspan="3"><i><b>Утворення кратних одиниць</b></i></td>
+                    </tr>
+                    <tr>
+                        <td>Гіга</td>
+                        <td>Г</td>
+                        <td>1 000 000 000=10<sup>9</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Мега</td>
+                        <td>М</td>
+                        <td>1 000 000=10<sup>6</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Кіло</td>
+                        <td>к</td>
+                        <td>1000=10<sup>3</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Гекто</td>
+                        <td>г</td>
+                        <td>100=10<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Дека</td>
+                        <td>да</td>
+                        <td>10=10<sup>1</sup></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><i><b>Утворення часткових одиниць</b></i></td>
+                    </tr>
+                    <tr>
+                        <td>Деци</td>
+                        <td>д</td>
+                        <td>0,1=10<sup>-1</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Санти</td>
+                        <td>с</td>
+                        <td>0,01=10<sup>-2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Мілі</td>
+                        <td>м</td>
+                        <td>0,001=10<sup>-3</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Мікро</td>
+                        <td>мк</td>
+                        <td>0,000001=10<sup>-6</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Нано</td>
+                        <td>н</td>
+                        <td>0,000000001=10<sup>-9</sup></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            <h2>А тепер спробую зробити більш складну таблицю</h2>
+            
+            <table border="2">
+                <caption>Кольорова табличка))</caption>
+                <tr>
+                    <td>violet</td>
+                    <td colspan="2">green</td>
+                    <td rowspan="2">red</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">blue</td>
+                    <td rowspan="2">red</td>
+                    <td>yellow</td>
+                </tr>
+                <tr>
+                    <td colspan="2">green</td>
+                </tr>
+                <tr>
+                    <td colspan="3">blue</td>
+                </tr>
+            </table>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>Відео</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ccctdNG3a-Y" 
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+        </section>
+        
+        <br>
+        
+        <a title="перейти на наступну сторінку" href="second-page.html" target="_blank">Оформити замовлення</a>
+        
+        <hr>
+        
+        
+        
+    </main>
+    
+    <footer>
+        <p>Тут щось має бути</p>
+    </footer>
+</body>
+</html>

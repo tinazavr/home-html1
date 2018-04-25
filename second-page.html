@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Оформлення замовлення</title>
+</head>
+
+<body>
+    <header>
+        <h1>Оформлення замовлення на спа-процедури для ваших улюбленців</h1>
+    </header>
+    
+    <main>
+        <p>Зверніть увагу, <b>всі</b> поля із зірочками обов'язкові для заповнення</p>
+        <form action="post" method="https://formspree.io/zavorotinskaya.ns@gmail.com">
+            
+            <fieldset>
+                <label for="client-name">*Ім'я отримувача:
+                    <input id="client-name" type="text" placeholder="Введіть ім'я" name="client-name" required>
+                </label>
+                <br> 
+                    
+                <label for="client-email">*E-mail:
+                    <input type="email" id="client-email" placeholder="Введіть E-mail" required>    
+                </label>
+                <br>
+                
+                <label for="client-telephone">Номер телефона отримувача:
+                    <input id="client-telephone" type="text" placeholder="(+38) 099 123 45 67" pattern="[/d]{10}">
+                </label>
+                <br>
+            </fieldset>
+        
+            <fieldset>
+                <label>Чи є у вас домашні тварини?</label>
+                    <label>
+                        <input type="radio" name="animal" value="Так"> Так
+                    </label>
+                    <label>
+                        <input type="radio" name="animal" value="Ні"> Ні
+                    </label>
+                    <label>
+                        <input type="radio" name="animal" value="Пропустити" checked> Пропустити
+                    </label>
+                <br>
+                
+                <select multiple size="7">
+                        <option>Кіт</option>
+                        <option>Собака</option>
+                        <option>Морська свинка</option>
+                        <option>Кінь</option>
+                        <option>Фретка</option>
+                        <option>Хом'як</option>
+                        <option>Рибки</option>
+                        <option>Корова</option>
+                        <option>Гусь</option>
+                        <option>Курка</option>
+                </select>
+                
+                <p>Дата народження вашого улюбленця:</p>
+                <p><i>(Якщо у вас декілька улюбленців, то вкажіть їх Імена та Дні народження в коментарі до замовлення)</i></p>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+                    
+                <select>
+                    <option>Місяць</option>
+                    <option>Січень</option>
+                    <option>Лютий</option>
+                    <option>Березень</option>
+                    <option>Квітень</option>
+                    <option>Травень</option>
+                    <option>Червень</option>
+                    <option>Липень</option>
+                    <option>Серпень</option>
+                    <option>Вересень</option>
+                    <option>Жовтень</option>
+                    <option>Листопад</option>
+                    <option>Грудень</option>
+                </select>
+                
+                <select>
+                    <option>Рік</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017/option>
+                    <option>2018</option>
+                </select>
+            
+                <br>
+                    
+                <label for="animal-name">Ім'я вашого домашнього улюбленця:
+                    <input id="animal-name" type="text" placeholder="Ім'я вашого улюбленця">
+                </label>
+                <br>
+                
+            </fieldset>
+                
+            <label for="comment44">Ваш комментар:
+                <textarea name="text" id="comment44" cols="40" wrap="hard" placeholder="Введіть коментар до замовлення"></textarea>
+            </label>
+
+            <br>
+            <br>
+            
+            <label for="password33">Пароль: 
+                <input type="password" id="password33" name="Введіть пароль">
+            </label>
+    
+            <br>
+            <input type="submit" value="Підтвердити">
+            <input type="reset" value="Очистити всі поля">
+        </form>
+    </main>
+    
+    <footer>
+        <h3>Дякуємо за замовлення!</h3>
+    </footer>
+</body>
+</html>
