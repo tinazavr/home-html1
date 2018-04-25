@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML сторінка</title>
+    <link rel="shortcut icon" type="image/png" href="818131.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="home-html.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -33,7 +41,7 @@
         
         <section>
             <h2>Невпорядкований список</h2>
-            <ul type="square">
+            <ul>
                 <li>Перший елемент списку</li>
                 <li>Другий <b>елемент</b></li>
                 <li>Передостанній елемент <i>невпорядкованого</i> списку</li>
@@ -43,7 +51,7 @@
             <br>
             
             <h2>А ще в HTML можна писати <b>формули</b></h2>
-            <ol type="I" start="5">
+            <ol start="3">
                 <li>sin<sup>2</sup>x+cos<sup>2</sup>x=1</li>
                 <li>log<sub>a</sub>1=0</li>
                 <li>C<sub>10</sub>H<sub>12</sub>N<sub>2</sub>O</li>
@@ -78,7 +86,7 @@
         
         <section>
             <h2>Нехай тут буде таблиця</h2>
-            <table border="9">
+            <table class="table table-striped">
                 <caption>Префікси фізичних величин</caption>
                 <thead>
                          <tr>
@@ -91,7 +99,7 @@
                 <tbody>
 
                     <tr>
-                        <td colspan="3"><i><b>Утворення кратних одиниць</b></i></td>
+                        <td colspan="3" class="text-center"><i><b>Утворення кратних одиниць</b></i></td>
                     </tr>
                     <tr>
                         <td>Гіга</td>
@@ -119,7 +127,7 @@
                         <td>10=10<sup>1</sup></td>
                     </tr>
                     <tr>
-                        <td colspan="3"><i><b>Утворення часткових одиниць</b></i></td>
+                        <td colspan="3" class="text-center"><i><b>Утворення часткових одиниць</b></i></td>
                     </tr>
                     <tr>
                         <td>Деци</td>
@@ -152,23 +160,23 @@
             
             <h2>А тепер спробую зробити більш складну таблицю</h2>
             
-            <table border="2">
+            <table class="table table-bordered table-colors">
                 <caption>Кольорова табличка))</caption>
                 <tr>
-                    <td>violet</td>
-                    <td colspan="2">green</td>
-                    <td rowspan="2">red</td>
+                    <td class="violet">violet</td>
+                    <td colspan="2" class="green">green</td>
+                    <td rowspan="2" class="red">red</td>
                 </tr>
                 <tr>
-                    <td rowspan="3">blue</td>
-                    <td rowspan="2">red</td>
-                    <td>yellow</td>
+                    <td rowspan="3" class="blue">blue</td>
+                    <td rowspan="2" class="red">red</td>
+                    <td class="yellow">yellow</td>
                 </tr>
                 <tr>
-                    <td colspan="2">green</td>
+                    <td colspan="2" class="green">green</td>
                 </tr>
                 <tr>
-                    <td colspan="3">blue</td>
+                    <td colspan="3" class="blue">blue</td>
                 </tr>
             </table>
         </section>
@@ -177,23 +185,25 @@
         
         <section>
             <h2>Відео</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ccctdNG3a-Y" 
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-            </iframe>
-        </section>
-        
+            <div class="video-cont">
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ccctdNG3a-Y" 
+                        allowfullscreen></iframe>
+                </div>
+                <a class="btn btn-primary" title="перейти на наступну сторінку" 
+                    href="second-page.html" target="_blank">Оформити замовлення</a>
+           </div>
+           
+       </section>
+       
         <br>
-        
-        <a title="перейти на наступну сторінку" href="second-page.html" target="_blank">Оформити замовлення</a>
-        
         <hr>
-        
-        
         
     </main>
     
     <footer>
-        <p>Тут щось має бути</p>
+        <h3 class="footer-color">Тут щось має бути</h3>
     </footer>
+    
 </body>
 </html>

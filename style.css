@@ -1,0 +1,18 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #4B3B47;
+    color: #E0D8DE;
+}
+
+main {
+    padding: 5px 50px;
+}
+
+.footer-color {
+    background-color: #1F2833;
+    font-weight: bold;
+}

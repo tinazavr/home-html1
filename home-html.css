@@ -1,0 +1,43 @@
+table.table {
+    width: 500px;
+}
+
+.table-colors td {
+    color: white;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 15px;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+    color: navy;
+}
+
+.green {
+    background-color: green;
+}
+
+.video-cont {
+    width: 560px;
+    text-align: right;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: lower-greek;
+}

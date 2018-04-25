@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>Оформлення замовлення</title>
+    <title>Оформлення замовлення</title>
+    <link rel="shortcut icon" type="image/png" href="818131.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="second-page.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,26 +21,23 @@
     <main>
         <p>Зверніть увагу, <b>всі</b> поля із зірочками обов'язкові для заповнення</p>
         <form method="post" action="https://formspree.io/zavorotinskaya.ns@gmail.com">
-            
-            <fieldset>
+
                 <label for="client-name">*Ім'я отримувача:
-                    <input id="client-name" type="text" placeholder="Введіть ім'я" name="client-name" required>
+                    <input class="form-control" id="client-name" type="text" placeholder="Введіть ім'я" name="client-name" required>
                 </label>
                 <br> 
                     
                 <label for="client-email">*E-mail:
-                    <input type="email" id="client-email" placeholder="Введіть E-mail" required>    
+                    <input class="form-control" type="email" id="client-email" placeholder="Введіть E-mail" required>    
                 </label>
                 <br>
                 
                 <label for="client-telephone">Номер телефона отримувача:
-                    <input id="client-telephone" type="text" placeholder="(+38) 099 123 45 67">
+                    <input class="form-control" id="client-telephone" type="text" placeholder="(+38) 099 123 45 67">
                 </label>
                 <br>
-            </fieldset>
-        
-            <fieldset>
-                <label>Чи є у вас домашні тварини?</label>
+            
+                <div>Чи є у вас домашні тварини?</div>
                     <label>
                         <input type="radio" name="animal" value="Так"> Так
                     </label>
@@ -46,7 +49,7 @@
                     </label>
                 <br>
                 
-                <select multiple size="7">
+                <select class="form-control" multiple size="7">
                         <option>Кіт</option>
                         <option>Собака</option>
                         <option>Морська свинка</option>
@@ -57,11 +60,13 @@
                         <option>Корова</option>
                         <option>Гусь</option>
                         <option>Курка</option>
+                        <option>Креветка</option>
                 </select>
                 
                 <p>Дата народження вашого улюбленця:</p>
                 <p><i>(Якщо у вас декілька улюбленців, то вкажіть їх Імена та Дні народження в коментарі до замовлення)</i></p>
-                <select>
+                <select class="form-control" >
+                    <option>День</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -95,7 +100,7 @@
                     <option>31</option>
                 </select>
                     
-                <select>
+                <select class="form-control">
                     <option>Місяць</option>
                     <option>Січень</option>
                     <option>Лютий</option>
@@ -111,7 +116,7 @@
                     <option>Грудень</option>
                 </select>
                 
-                <select>
+                <select class="form-control">
                     <option>Рік</option>
                     <option>2000</option>
                     <option>2001</option>
@@ -137,31 +142,30 @@
                 <br>
                     
                 <label for="animal-name">Ім'я вашого домашнього улюбленця:
-                    <input id="animal-name" type="text" placeholder="Ім'я вашого улюбленця">
+                    <input class="form-control" id="animal-name" type="text" placeholder="Ім'я вашого улюбленця">
                 </label>
                 <br>
-                
-            </fieldset>
+
                 
             <label for="comment44">Ваш комментар:
-                <textarea name="text" id="comment44" cols="40" wrap="hard" placeholder="Введіть коментар до замовлення"></textarea>
+                <textarea class="form-control" name="text" id="comment44" cols="40" wrap="hard" placeholder="Введіть коментар до замовлення"></textarea>
             </label>
 
             <br>
             <br>
             
             <label for="password33">Пароль: 
-                <input type="password" id="password33" name="Введіть пароль">
+                <input class="form-control" type="password" id="password33" name="Введіть пароль">
             </label>
     
             <br>
-            <input type="submit" value="Підтвердити">
-            <input type="reset" value="Очистити всі поля">
+            <input class="btn btn-default" type="submit" value="Підтвердити">
+            <input class="btn btn-default" type="reset" value="Очистити всі поля">
         </form>
     </main>
     
     <footer>
-        <h3>Дякуємо за замовлення!</h3>
+        <h3 class="footer-color">Дякуємо за замовлення!</h3>
     </footer>
 </body>
 </html>
